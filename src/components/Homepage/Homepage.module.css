@@ -12,6 +12,9 @@
 .space__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: space-between;
+  padding-top: 12rem;
+
   /* gap: 5rem; */
 }
 
@@ -27,7 +30,11 @@
 }
 
 .box__1 > p {
-  max-width: 450px;
+  max-width: 420px;
+  text-align: justify;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 .box__2 {
@@ -38,35 +45,62 @@
 .explore {
   padding: 5rem 5rem;
   border-radius: 50%;
-  transition: background 0.5s ease-in;
+  transition: background 0.2s ease-in;
 }
 
 .explore:hover {
   background-color: #979797;
+  /* backdrop-filter: blur(30px); */
 }
 
-.box__2 .explore__content {
+.box__2 .explore__button {
   padding: 6rem 3rem;
   text-align: center;
   border-radius: 50%;
   background-color: var(--white);
-}
-
-.explore__content:hover .explore {
-}
-
-.box__2 .explore__content > h4 {
-  width: 100%;
+  border: none;
+  outline: none;
   font-size: var(--heading-four);
   font-family: var(--belle-fair-font);
   color: var(--dark-blue);
   letter-spacing: 2px;
 }
 
-@media (max-width: 768px) {
+.box__2 .explore__content > h4 {
+  width: 100%;
+}
+
+@media (max-width: 1040px) {
   .space__container {
     width: 100%;
-    justify-items: center;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .box__1 {
+    text-align: center;
+  }
+  .box__1 > p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .explore {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 825px) {
+  .main {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+  .explore {
+    padding: 0;
+  }
+
+  /* .box__1 {
+    padding-top: 4rem;
+  } */
 }

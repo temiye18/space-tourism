@@ -20,9 +20,7 @@ const Homepage = () => {
 
           <div className={classes.box__2}>
             <div className={classes.explore}>
-              <div className={classes.explore__content}>
-                <h4>EXPLORE</h4>
-              </div>
+              <button className={classes.explore__button}>EXPLORE</button>
             </div>
           </div>
         </div>
