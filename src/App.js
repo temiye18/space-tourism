@@ -4,6 +4,8 @@ import Navigation from "./components/Header/Navigation";
 import Homepage from "./Pages/HomePage/Homepage";
 import Destination from "./Pages/Destination/Destination";
 import DestinationDetails from "./Pages/Destination/DestinationDetails";
+import Crew from "./Pages/Crew/Crew";
+import Technology from "./Pages/Technology/Technology";
 function App() {
   return (
     <>
@@ -18,6 +20,8 @@ function App() {
         <Route path="/destination/*" element={<Destination />}>
           <Route path=":planet" element={<DestinationDetails />} />
         </Route>
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Technology />} />
       </Routes>
     </>
   );

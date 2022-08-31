@@ -26,6 +26,7 @@ header {
 
 .nav {
   backdrop-filter: blur(90px);
+  background: hsla(0, 0%, 100%, 0.04);
 }
 
 .nav ul {
