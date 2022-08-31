@@ -13,7 +13,7 @@ const Navigation = () => {
       </div>
       <div className={classes.right__items}>
         <div className={classes.horizontal}></div>
-        <nav>
+        <nav className={classes.nav}>
           <ul>
             <li>
               <NavLink to="/home" className={activeLink}>
@@ -21,7 +21,7 @@ const Navigation = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/destination" className={activeLink}>
+              <NavLink to="/destination/Moon" className={activeLink}>
                 01 DESTINATION
               </NavLink>
             </li>

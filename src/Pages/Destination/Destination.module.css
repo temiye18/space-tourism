@@ -3,8 +3,112 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   /* display: flex;
   justify-content: center;
   align-items: center; */
+}
+
+.dest__container {
+  padding-top: 10rem;
+}
+
+.dest__container > h5 {
+  font-size: var(--sub-heading-one);
+  letter-spacing: 4.72px;
+  /* font-weight: 400; */
+}
+
+.dest__container > h5 span {
+  color: #979797;
+  font-weight: bold;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: 1fr 1fr; */
+  margin: 3rem 0 0;
+}
+
+.navBar ul {
+  display: flex;
+  column-gap: 2.5rem;
+  align-self: center;
+}
+.navBar > ul > li a {
+  color: var(--light-purple);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: var(--nav-text-spacing);
+  border-bottom: 2px solid transparent;
+  padding: 12px 0;
+  transition: border 0.3s ease-in-out;
+}
+
+.navBar > ul > li a:hover {
+  border-color: #979797;
+}
+
+.navBar > ul > li a:active,
+.navBar > ul > li a.active {
+  border-color: var(--white);
+}
+
+/* DESTINATION DETAILS */
+
+.detail__box {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.detail__image {
+  align-self: center;
+  justify-self: center;
+}
+
+.detail__content {
+  justify-self: center;
+  align-self: center;
+}
+
+.detail__content > h2 {
+  font-size: var(--heading-two);
+  font-family: var(--belle-fair-font);
+  text-transform: uppercase;
+}
+
+.detail__content > p {
+  max-width: 420px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--light-purple);
+  word-spacing: 2px;
+}
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: #979797;
+  margin: 2.5rem 0;
+}
+
+.detail__metrics {
+  display: flex;
+  gap: 4.3rem;
+}
+.detail__distance p,
+.detail__duration p {
+  font-size: 14px;
+  color: var(--light-purple);
+  letter-spacing: 2.36px;
+}
+
+.detail__distance h5,
+.detail__duration h5 {
+  text-transform: uppercase;
+  font-size: var(--heading-five);
+  font-family: var(--belle-fair-font);
+  padding-top: 1rem;
 }
