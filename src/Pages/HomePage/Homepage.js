@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Homepage.module.css";
-import Container from "../Utilities/Container";
+import Container from "../../components/Utilities/Container";
 
 const Homepage = () => {
   return (

@@ -38,22 +38,24 @@ nav ul {
 
 nav > ul > li {
   box-sizing: border-box;
-  transition: border 0.3s ease-in;
   padding: 2rem 0;
-  border-bottom: 2px solid transparent;
-}
-
-nav > ul > li:hover {
-  border-color: #979797;
-}
-
-.active {
-  border-color: white;
 }
 
 nav > ul > li > a {
+  padding: 2rem 0;
   color: var(--white);
   letter-spacing: 2.7px;
+  transition: border 0.3s ease-in;
+  border-bottom: 2px solid transparent;
+}
+
+nav > ul > li > a:hover {
+  border-color: #979797;
+}
+
+n nav > ul > li > a:active,
+nav > ul > li > a.active {
+  border-color: white;
 }
 
 .menu__bar {

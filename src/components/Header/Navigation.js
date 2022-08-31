@@ -1,9 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/shared/logo.svg";
 import classes from "./Navigation.module.css";
 import menuBar from "../../assets/shared/icon-hamburger.svg";
 
 const Navigation = () => {
+  const activeLink = (navData) => (navData.isActive ? classes.active : "");
   return (
     <header>
       <div className={classes.logo}>
@@ -14,16 +16,24 @@ const Navigation = () => {
         <nav>
           <ul>
             <li>
-              <a href="#home">00 HOME</a>
+              <NavLink to="/home" className={activeLink}>
+                00 HOME
+              </NavLink>
             </li>
             <li>
-              <a href="#destination">01 DESTINATION</a>
+              <NavLink to="/destination" className={activeLink}>
+                01 DESTINATION
+              </NavLink>
             </li>
             <li>
-              <a href="#crew">02 CREW</a>
+              <NavLink to="/crew" className={activeLink}>
+                02 CREW
+              </NavLink>
             </li>
             <li>
-              <a href="#technology">03 TECHNOLOGY</a>
+              <NavLink to="/technology" className={activeLink}>
+                03 TECHNOLOGY
+              </NavLink>
             </li>
           </ul>
         </nav>
