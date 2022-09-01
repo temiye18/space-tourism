@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Homepage />} />
         <Route
-          path="/destination/"
+          path="/destination"
           element={<Navigate to="/destination/Moon" />}
         />
         <Route path="/destination/*" element={<Destination />}>
@@ -22,6 +22,7 @@ function App() {
         </Route>
         <Route path="/crew" element={<Crew />} />
         <Route path="/technology" element={<Technology />} />
+        <Route path="*" element={<Technology />} />
       </Routes>
     </>
   );

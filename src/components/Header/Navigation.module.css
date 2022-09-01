@@ -40,6 +40,11 @@ header {
 .nav > ul > li {
   box-sizing: border-box;
   padding: 2rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav > ul > li.active__li {
+  border-color: white;
 }
 
 .nav > ul > li > a {
