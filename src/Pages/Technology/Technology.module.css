@@ -89,8 +89,9 @@
     background-image: url("../../assets/technology/background-technology-tablet.jpg");
   }
   .tech__navBox {
-    grid-template-columns: 1fr;
-    /* gap: 5rem; */
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .tech__img1 {
@@ -108,9 +109,12 @@
   }
 
   .tech__items {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr;
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem; */
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
   .tech__item1 > h3 {
