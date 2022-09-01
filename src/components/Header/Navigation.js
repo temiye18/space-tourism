@@ -35,7 +35,6 @@ const Navigation = () => {
   const destinationClass = destinationIsActive ? classes.active__li : "";
   const crewClass = crewIsActive ? classes.active : "";
   const technologyClass = technologyIsActive ? classes.active : "";
-  const activeLink = (navData) => (navData.isActive ? classes.active : "");
 
   return (
     <header>
@@ -49,7 +48,7 @@ const Navigation = () => {
             <li>
               <NavLink
                 to="/home"
-                className={activeLink}
+                activeClassName={classes.active}
                 onClick={disableActiveList}
               >
                 00 HOME
@@ -57,22 +56,26 @@ const Navigation = () => {
             </li>
             <li className={destinationClass}>
               <NavLink
-                to="/destination/Moon"
-                className={activeLink}
+                to="/destination"
+                activeClassName={classes.active}
                 onClick={activeDestination}
               >
                 01 DESTINATION
               </NavLink>
             </li>
             <li className={crewClass}>
-              <NavLink to="/crew" className={activeLink} onClick={activeCrew}>
+              <NavLink
+                to="/crew"
+                activeClassName={classes.active}
+                onClick={activeCrew}
+              >
                 02 CREW
               </NavLink>
             </li>
             <li className={technologyClass}>
               <NavLink
                 to="/technology"
-                className={activeLink}
+                activeClassName={classes.active}
                 onClick={activeTechnology}
               >
                 03 TECHNOLOGY

@@ -1,10 +1,12 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Route, useRouteMatch } from "react-router-dom";
 import data from "../../data";
 import Container from "../../components/Utilities/Container";
+import DestinationDetails from "./DestinationDetails";
+import DestinationLanding from "./DestinationLanding";
 import classes from "./Destination.module.css";
 const Destination = () => {
-  const activeLink = (navData) => (navData.isActive ? classes.active : "");
+  const { path, url } = useRouteMatch();
   return (
     <main className={classes.main}>
       <Container>
@@ -17,7 +19,10 @@ const Destination = () => {
               {data.destinations.map((destination, index) => {
                 return (
                   <li key={index}>
-                    <NavLink className={activeLink} to={destination.name}>
+                    <NavLink
+                      activeClassName={classes.active}
+                      to={`${url}/${destination.name}`}
+                    >
                       {destination.name}
                     </NavLink>
                   </li>
@@ -27,7 +32,12 @@ const Destination = () => {
           </nav>
         </div>
 
-        <Outlet />
+        <Route exact path={path}>
+          <DestinationLanding />
+        </Route>
+        <Route path={`${path}/:planet`}>
+          <DestinationDetails />
+        </Route>
       </Container>
     </main>
   );

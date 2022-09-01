@@ -1,29 +1,35 @@
 // import data from "./data";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Navigation from "./components/Header/Navigation";
 import Homepage from "./Pages/HomePage/Homepage";
 import Destination from "./Pages/Destination/Destination";
-import DestinationDetails from "./Pages/Destination/DestinationDetails";
+
 import Crew from "./Pages/Crew/Crew";
 import Technology from "./Pages/Technology/Technology";
 function App() {
   return (
     <>
       <Navigation />
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Homepage />} />
-        <Route
-          path="/destination"
-          element={<Navigate to="/destination/Moon" />}
-        />
-        <Route path="/destination/*" element={<Destination />}>
-          <Route path=":planet" element={<DestinationDetails />} />
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/home" />
         </Route>
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
-        <Route path="*" element={<Technology />} />
-      </Routes>
+        <Route path="/home">
+          <Homepage />
+        </Route>
+        <Route path="/destination">
+          <Destination />
+        </Route>
+        <Route path="/crew">
+          <Crew />
+        </Route>
+        <Route path="/technology">
+          <Technology />
+        </Route>
+        <Route path="*">
+          <Technology />
+        </Route>
+      </Switch>
     </>
   );
 }

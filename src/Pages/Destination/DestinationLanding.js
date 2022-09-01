@@ -1,24 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import data from "../../data";
 import classes from "./Destination.module.css";
 
-const DestinationDetails = () => {
-  const { planet } = useParams();
-
-  const destination = data.destinations.find(
-    (destination) => destination.name === planet
-  );
-
-  // useEffect(() => {
-  //   if (!destination) {
-  //     navigate("/destination", { replace: true });
-  //   }
-  // }, [destination, navigate, planet]);
-
-  // if (!destination) {
-  //   return null;
-  // }
+const DestinationLanding = () => {
+  const destination = data.destinations[0];
   return (
     <div className={classes.detail__box}>
       <div className={classes.detail__image}>
@@ -43,4 +28,4 @@ const DestinationDetails = () => {
   );
 };
 
-export default DestinationDetails;
+export default DestinationLanding;
