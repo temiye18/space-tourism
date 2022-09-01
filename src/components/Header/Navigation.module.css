@@ -87,6 +87,9 @@ header {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding-top: 1.8rem;
+  }
   .right__items {
     display: none;
   }

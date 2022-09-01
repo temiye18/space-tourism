@@ -23,7 +23,7 @@
 }
 
 .box__1 > h1 {
-  font-size: 80px;
+  font-size: var(--heading-one);
   font-family: var(--belle-fair-font);
   padding: 1.2rem 0;
 }
@@ -88,11 +88,11 @@
   }
 
   .explore {
-    margin-top: 4rem;
+    margin: 4rem 0;
   }
 }
 
-@media (max-width: 825px) {
+@media (max-width: 768px) {
   .main {
     background-image: url("../../assets/home/background-home-tablet.jpg");
   }
@@ -100,13 +100,13 @@
     padding: 0;
   }
 
-  /* .box__1 {
-    padding-top: 4rem;
-  } */
+  .box__1 > h1 {
+    font-size: 80px;
+  }
 }
 
-@media (min-width: 768px) {
-  .box__1 > h1 {
-    font-size: var(--heading-one);
+@media (max-width: 425px) {
+  .main {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
   }
 }

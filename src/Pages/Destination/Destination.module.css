@@ -75,7 +75,7 @@
 }
 
 .detail__content > h2 {
-  font-size: 56px;
+  font-size: var(--heading-two);
   font-family: var(--belle-fair-font);
   text-transform: uppercase;
 }
@@ -115,7 +115,19 @@
 }
 
 @media (max-width: 768px) {
+  .main {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
   .detail__content > h2 {
+    text-align: center;
+    font-size: 56px;
+  }
+  .detail__box {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail__content > p {
     text-align: center;
   }
 
@@ -128,19 +140,13 @@
   }
 }
 
-@media (min-width: 768px) {
-  .detail__content > h2 {
-    font-size: var(--heading-two);
-  }
-}
-
 @media (max-width: 425px) {
-  .detail__box {
-    justify-content: center;
-    align-items: center;
+  .main {
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
   }
 
-  .detail__content > p {
+  .dest__container > h5 {
     text-align: center;
+    font-size: 16px;
   }
 }
