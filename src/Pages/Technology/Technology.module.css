@@ -26,11 +26,15 @@
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 150px auto;
-  /* gap: 5rem; */
+  /* gap: 2.5rem; */
 }
 
 .tech__navBox .navBar {
   align-self: center;
+}
+
+.navBar {
+  justify-self: end;
 }
 
 .navBar > ul > li {
@@ -60,6 +64,7 @@
 }
 
 .tech__item1 {
+  justify-self: end;
   align-self: center;
 }
 
@@ -78,6 +83,10 @@
   font-size: 18px;
   line-height: 1.7;
   max-width: 440px;
+}
+
+.tech__item2 {
+  justify-self: end;
 }
 
 .tech__img2 {
@@ -101,6 +110,7 @@
   .tech__img2 {
     display: block;
   }
+
   .navBar > ul {
     display: flex;
     justify-content: center;
@@ -142,5 +152,9 @@
   .tech__container > h5 {
     font-size: 16px;
     text-align: center;
+  }
+
+  .tech__item1 > p {
+    max-width: 350px;
   }
 }

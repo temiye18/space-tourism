@@ -17,10 +17,22 @@ function App() {
   const closeSideNav = () => {
     setSideNavIsOpen(false);
   };
+
+  const delaySideNavClose = () => {
+    const time = setTimeout(() => {
+      closeSideNav();
+    }, 400);
+
+    return () => clearTimeout(time);
+  };
   return (
     <>
       <Navigation openSideNav={openSideNav} />
-      <SideNav sideNavIsOpen={sideNavIsOpen} closeSideNav={closeSideNav} />
+      <SideNav
+        sideNavIsOpen={sideNavIsOpen}
+        closeSideNav={closeSideNav}
+        delayClose={delaySideNavClose}
+      />
       <Switch>
         <Route exact path="/">
           <Redirect to="/home" />

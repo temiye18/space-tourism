@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import hamburger from "../../assets/shared/icon-close.svg";
 import classes from "./SideNav.module.css";
 
-const SideNav = ({ closeSideNav, sideNavIsOpen }) => {
+const SideNav = ({ closeSideNav, delayClose, sideNavIsOpen }) => {
   return (
     <aside className={`${sideNavIsOpen ? classes.showSideNav : ""}`}>
       <div className={classes.close__nav}>
@@ -16,7 +16,7 @@ const SideNav = ({ closeSideNav, sideNavIsOpen }) => {
             <NavLink
               to="/home"
               activeClassName={classes.active}
-              onClick={closeSideNav}
+              onClick={delayClose}
             >
               <span className={classes.link__span}>00</span> HOME
             </NavLink>
@@ -25,7 +25,7 @@ const SideNav = ({ closeSideNav, sideNavIsOpen }) => {
             <NavLink
               to="/destination"
               activeClassName={classes.active}
-              onClick={closeSideNav}
+              onClick={delayClose}
             >
               <span className={classes.link__span}>01</span> DESTINATION
             </NavLink>
@@ -34,7 +34,7 @@ const SideNav = ({ closeSideNav, sideNavIsOpen }) => {
             <NavLink
               to="/crew"
               activeClassName={classes.active}
-              onClick={closeSideNav}
+              onClick={delayClose}
             >
               <span className={classes.link__span}>02</span> CREW
             </NavLink>
@@ -43,7 +43,7 @@ const SideNav = ({ closeSideNav, sideNavIsOpen }) => {
             <NavLink
               to="/technology"
               activeClassName={classes.active}
-              onClick={closeSideNav}
+              onClick={delayClose}
             >
               <span className={classes.link__span}>03</span> TECHNOLOGY
             </NavLink>
