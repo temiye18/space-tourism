@@ -13,22 +13,38 @@ const SideNav = ({ closeSideNav, sideNavIsOpen }) => {
       <nav className={classes.nav}>
         <ul>
           <li>
-            <NavLink to="/home" activeClassName={classes.active}>
+            <NavLink
+              to="/home"
+              activeClassName={classes.active}
+              onClick={closeSideNav}
+            >
               <span className={classes.link__span}>00</span> HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/destination" activeClassName={classes.active}>
+            <NavLink
+              to="/destination"
+              activeClassName={classes.active}
+              onClick={closeSideNav}
+            >
               <span className={classes.link__span}>01</span> DESTINATION
             </NavLink>
           </li>
           <li>
-            <NavLink to="/crew" activeClassName={classes.active}>
+            <NavLink
+              to="/crew"
+              activeClassName={classes.active}
+              onClick={closeSideNav}
+            >
               <span className={classes.link__span}>02</span> CREW
             </NavLink>
           </li>
           <li>
-            <NavLink to="/technology" activeClassName={classes.active}>
+            <NavLink
+              to="/technology"
+              activeClassName={classes.active}
+              onClick={closeSideNav}
+            >
               <span className={classes.link__span}>03</span> TECHNOLOGY
             </NavLink>
           </li>

@@ -7,7 +7,7 @@ aside {
   width: 254px;
   backdrop-filter: blur(90px);
   background: hsla(0, 0%, 100%, 0.04);
-  transition: all 0.4s linear;
+  transition: all 0.8s linear;
   transform: translateX(120%);
   padding: 2rem 2rem;
 }
