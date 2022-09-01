@@ -59,7 +59,7 @@
 /* DESTINATION DETAILS */
 
 .detail__box {
-  padding-top: 3rem;
+  padding: 3rem 0 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
