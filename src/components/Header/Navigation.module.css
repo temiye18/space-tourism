@@ -78,10 +78,16 @@ header {
   .horizontal {
     display: none;
   }
-  /* header {
-    padding: 3rem 5rem;
+  header {
+    padding-left: 3rem;
   }
+
   .right__items {
     display: none;
-  } */
+  }
+
+  .menu__bar {
+    display: block;
+    padding-right: 3rem;
+  }
 }

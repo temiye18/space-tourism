@@ -4,7 +4,7 @@ import logo from "../../assets/shared/logo.svg";
 import classes from "./Navigation.module.css";
 import menuBar from "../../assets/shared/icon-hamburger.svg";
 
-const Navigation = () => {
+const Navigation = ({ openSideNav }) => {
   const [destinationIsActive, setDestinationIsActive] = useState(false);
   const [crewIsActive, setCrewIsActive] = useState(false);
   const [technologyIsActive, setTechnologyIsActive] = useState(false);
@@ -85,7 +85,7 @@ const Navigation = () => {
         </nav>
       </div>
       <div className={classes.menu__bar}>
-        <img src={menuBar} alt="menu" />
+        <img src={menuBar} alt="menu" onClick={openSideNav} />
       </div>
     </header>
   );
