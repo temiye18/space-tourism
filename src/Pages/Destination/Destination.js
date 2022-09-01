@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Route, useRouteMatch } from "react-router-dom";
+import { NavLink, Route, useRouteMatch, Redirect } from "react-router-dom";
 import data from "../../data";
 import Container from "../../components/Utilities/Container";
 import DestinationDetails from "./DestinationDetails";
@@ -37,6 +37,9 @@ const Destination = () => {
         </Route>
         <Route path={`${path}/:planet`}>
           <DestinationDetails />
+        </Route>
+        <Route path={`${path}/:planet/*`}>
+          <Redirect to="/destination" />
         </Route>
       </Container>
     </main>

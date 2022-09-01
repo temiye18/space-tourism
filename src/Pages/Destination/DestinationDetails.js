@@ -1,24 +1,25 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams, useHistory } from "react-router-dom";
 import data from "../../data";
 import classes from "./Destination.module.css";
 
 const DestinationDetails = () => {
   const { planet } = useParams();
+  const history = useHistory();
 
   const destination = data.destinations.find(
     (destination) => destination.name === planet
   );
 
-  // useEffect(() => {
-  //   if (!destination) {
-  //     navigate("/destination", { replace: true });
-  //   }
-  // }, [destination, navigate, planet]);
+  useEffect(() => {
+    if (!destination) {
+      history.replace("/destination");
+    }
+  }, [destination, history, planet]);
 
-  // if (!destination) {
-  //   return null;
-  // }
+  if (!destination) {
+    return null;
+  }
   return (
     <div className={classes.detail__box}>
       <div className={classes.detail__image}>
