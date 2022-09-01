@@ -78,10 +78,15 @@ header {
   .horizontal {
     display: none;
   }
+}
+
+@media (max-width: 930px) {
   header {
     padding-left: 3rem;
   }
+}
 
+@media (max-width: 768px) {
   .right__items {
     display: none;
   }

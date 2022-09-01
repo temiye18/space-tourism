@@ -10,7 +10,7 @@ const SideNav = ({ closeSideNav, sideNavIsOpen }) => {
         <img src={hamburger} alt="close" onClick={closeSideNav} />
       </div>
 
-      <nav>
+      <nav className={classes.nav}>
         <ul>
           <li>
             <NavLink to="/home" activeClassName={classes.active}>

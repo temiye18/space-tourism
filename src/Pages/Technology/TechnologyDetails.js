@@ -32,11 +32,11 @@ const TechnologyDetails = () => {
           src={technology.images.portrait}
           alt="space_ship"
         />
-        {/* <img
+        <img
           className={classes.tech__img2}
           src={technology.images.landscape}
           alt="space_ship"
-        /> */}
+        />
       </div>
     </div>
   );

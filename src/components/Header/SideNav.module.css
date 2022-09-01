@@ -8,7 +8,7 @@ aside {
   backdrop-filter: blur(90px);
   background: hsla(0, 0%, 100%, 0.04);
   transition: all 0.4s linear;
-  transform: translateX(100%);
+  transform: translateX(120%);
   padding: 2rem 2rem;
 }
 
@@ -25,25 +25,24 @@ aside {
   justify-self: end;
 }
 
-aside > nav {
+aside > nav.nav {
   margin-top: 4rem;
 }
 
-nav > ul {
+nav.nav > ul {
   display: grid;
   gap: 2rem;
 }
-.nav > ul > li {
+nav.nav > ul > li {
   box-sizing: border-box;
-  padding: 2rem 0;
   border-bottom: 2px solid transparent;
 }
 
-.nav > ul > li.active__li {
+nav.nav > ul > li.active__li {
   border-color: white;
 }
 
-nav > ul > li > a {
+nav.nav > ul > li > a {
   color: var(--white);
   font-size: 16px;
   letter-spacing: 2.7px;
@@ -51,11 +50,11 @@ nav > ul > li > a {
   border-bottom: 2px solid transparent;
 }
 
-nav > ul > li > a:hover {
+nav.nav > ul > li > a:hover {
   border-color: #979797;
 }
 
-nav > ul > li > a.active {
+nav.nav > ul > li > a.active {
   border-color: white;
 }
 
