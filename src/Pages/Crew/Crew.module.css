@@ -4,7 +4,15 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+}
+
+@media (max-width: 768px) {
+  .main {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+  }
+}
+@media (max-width: 425px) {
+  .main {
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  }
 }
