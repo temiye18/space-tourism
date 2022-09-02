@@ -26,7 +26,7 @@
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 150px auto;
-  /* gap: 2.5rem; */
+  gap: 2.5rem;
 }
 
 .tech__navBox .navBar {

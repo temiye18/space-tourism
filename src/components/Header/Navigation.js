@@ -56,7 +56,7 @@ const Navigation = ({ openSideNav }) => {
             </li>
             <li className={destinationClass}>
               <NavLink
-                to="/destination"
+                to="/destination/Moon"
                 activeClassName={classes.active}
                 onClick={activeDestination}
               >

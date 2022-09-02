@@ -62,3 +62,7 @@ p {
 img {
   max-width: 100%;
 }
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--white);
+}
