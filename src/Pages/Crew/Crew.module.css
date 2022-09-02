@@ -22,10 +22,6 @@ h5.crew__heading {
 
 /* CREW SWIPER */
 
-.crewSwipe__box {
-  /* margin-top: 0.5rem; */
-}
-
 .crewSwipe__item {
   display: flex;
   justify-content: space-between;

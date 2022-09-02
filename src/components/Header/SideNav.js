@@ -23,7 +23,7 @@ const SideNav = ({ closeSideNav, delayClose, sideNavIsOpen }) => {
           </li>
           <li>
             <NavLink
-              to="/destination"
+              to="/destination/Moon"
               activeClassName={classes.active}
               onClick={delayClose}
             >
