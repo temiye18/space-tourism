@@ -14,7 +14,7 @@ const SideNav = ({ closeSideNav, delayClose, sideNavIsOpen }) => {
         <ul>
           <li>
             <NavLink
-              to="/home"
+              to="/"
               activeClassName={classes.active}
               onClick={delayClose}
             >

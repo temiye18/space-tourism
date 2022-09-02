@@ -34,12 +34,13 @@ function App() {
         delayClose={delaySideNavClose}
       />
       <Switch>
-        <Route exact path="/">
-          <Redirect to="/home" />
+        <Route exact path="/home">
+          <Redirect to="/" />
         </Route>
-        <Route path="/home">
+        <Route path="/" exact>
           <Homepage />
         </Route>
+
         <Route path="/destination">
           <Destination />
         </Route>
@@ -50,7 +51,7 @@ function App() {
           <Technology />
         </Route>
         <Route path="*">
-          <Technology />
+          <Redirect to="/" />
         </Route>
       </Switch>
     </>

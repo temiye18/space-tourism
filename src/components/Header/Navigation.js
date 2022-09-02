@@ -6,35 +6,35 @@ import menuBar from "../../assets/shared/icon-hamburger.svg";
 
 const Navigation = ({ openSideNav }) => {
   const [destinationIsActive, setDestinationIsActive] = useState(false);
-  const [crewIsActive, setCrewIsActive] = useState(false);
-  const [technologyIsActive, setTechnologyIsActive] = useState(false);
+  // const [crewIsActive, setCrewIsActive] = useState(false);
+  // const [technologyIsActive, setTechnologyIsActive] = useState(false);
 
   const disableActiveList = () => {
     setDestinationIsActive(false);
-    setCrewIsActive(false);
-    setTechnologyIsActive(false);
+    // setCrewIsActive(false);
+    // setTechnologyIsActive(false);
   };
 
   const activeDestination = () => {
     setDestinationIsActive(true);
-    setCrewIsActive(false);
-    setTechnologyIsActive(false);
+    // setCrewIsActive(false);
+    // setTechnologyIsActive(false);
   };
   const activeCrew = () => {
     setDestinationIsActive(false);
-    setCrewIsActive(true);
-    setTechnologyIsActive(false);
+    // setCrewIsActive(true);
+    // setTechnologyIsActive(false);
   };
 
   const activeTechnology = () => {
     setDestinationIsActive(false);
-    setCrewIsActive(false);
-    setTechnologyIsActive(true);
+    // setCrewIsActive(false);
+    // setTechnologyIsActive(true);
   };
 
   const destinationClass = destinationIsActive ? classes.active__li : "";
-  const crewClass = crewIsActive ? classes.active : "";
-  const technologyClass = technologyIsActive ? classes.active : "";
+  // const crewClass = crewIsActive ? classes.active__li : "";
+  // const technologyClass = technologyIsActive ? classes.active__li : "";
 
   return (
     <header>
@@ -47,7 +47,7 @@ const Navigation = ({ openSideNav }) => {
           <ul>
             <li>
               <NavLink
-                to="/home"
+                to="/"
                 activeClassName={classes.active}
                 onClick={disableActiveList}
               >
@@ -63,7 +63,7 @@ const Navigation = ({ openSideNav }) => {
                 01 DESTINATION
               </NavLink>
             </li>
-            <li className={crewClass}>
+            <li>
               <NavLink
                 to="/crew"
                 activeClassName={classes.active}
@@ -72,7 +72,7 @@ const Navigation = ({ openSideNav }) => {
                 02 CREW
               </NavLink>
             </li>
-            <li className={technologyClass}>
+            <li>
               <NavLink
                 to="/technology"
                 activeClassName={classes.active}
