@@ -104,4 +104,7 @@ h5.crew__heading {
   h5.crew__heading {
     text-align: center;
   }
+  .crewSwipe__box {
+    padding: 2rem;
+  }
 }
