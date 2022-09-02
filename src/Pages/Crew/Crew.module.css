@@ -84,11 +84,8 @@ h5.crew__heading {
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+    margin-top: 2rem;
     text-align: center;
-  }
-
-  .crewSwipe__box {
-    padding: 2rem;
   }
 }
 @media (max-width: 425px) {
@@ -103,8 +100,5 @@ h5.crew__heading {
 
   h5.crew__heading {
     text-align: center;
-  }
-  .crewSwipe__box {
-    padding: 2rem;
   }
 }
