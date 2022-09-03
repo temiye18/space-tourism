@@ -40,8 +40,8 @@
   margin-top: 1rem;
 }
 .errorLink {
-  color: var(--dark-blue);
-  background-color: var(--white);
+  color: #070549;
+  background: var(--white);
   display: inline-block;
   font-weight: bold;
   border: 8px solid #278bcb;
@@ -50,6 +50,13 @@
   padding: 3rem 1.5rem;
   border-radius: 50%;
   text-transform: uppercase;
+  transition: background 0.5s ease-in;
+}
+
+.errorLink:hover {
+  background: #070549;
+  color: var(--white);
+  border-color: #278bcb;
 }
 
 .error__item2 .img2 {
