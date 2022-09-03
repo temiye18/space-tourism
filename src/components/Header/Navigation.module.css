@@ -12,7 +12,6 @@ header {
   display: flex;
   align-items: center;
   position: relative;
-  /* background-color: red; */
 }
 
 .horizontal {
@@ -59,7 +58,6 @@ header {
   border-color: #979797;
 }
 
-.nav > ul > li > a:active,
 .nav > ul > li > a.active {
   border-color: white;
 }

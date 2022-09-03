@@ -20,17 +20,17 @@ const Navigation = ({ openSideNav }) => {
     // setCrewIsActive(false);
     // setTechnologyIsActive(false);
   };
-  const activeCrew = () => {
-    setDestinationIsActive(false);
-    // setCrewIsActive(true);
-    // setTechnologyIsActive(false);
-  };
+  // const activeCrew = () => {
+  //   setDestinationIsActive(false);
+  //   setCrewIsActive(true);
+  //   setTechnologyIsActive(false);
+  // };
 
-  const activeTechnology = () => {
-    setDestinationIsActive(false);
-    // setCrewIsActive(false);
-    // setTechnologyIsActive(true);
-  };
+  // const activeTechnology = () => {
+  //   setDestinationIsActive(false);
+  //   setCrewIsActive(false);
+  //   setTechnologyIsActive(true);
+  // };
 
   const destinationClass = destinationIsActive ? classes.active__li : "";
   // const crewClass = crewIsActive ? classes.active__li : "";
@@ -47,7 +47,7 @@ const Navigation = ({ openSideNav }) => {
           <ul>
             <li>
               <NavLink
-                to="/"
+                to="/home"
                 activeClassName={classes.active}
                 onClick={disableActiveList}
               >
@@ -67,7 +67,7 @@ const Navigation = ({ openSideNav }) => {
               <NavLink
                 to="/crew"
                 activeClassName={classes.active}
-                onClick={activeCrew}
+                onClick={disableActiveList}
               >
                 02 CREW
               </NavLink>
@@ -76,7 +76,7 @@ const Navigation = ({ openSideNav }) => {
               <NavLink
                 to="/technology"
                 activeClassName={classes.active}
-                onClick={activeTechnology}
+                onClick={disableActiveList}
               >
                 03 TECHNOLOGY
               </NavLink>

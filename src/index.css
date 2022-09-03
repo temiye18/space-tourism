@@ -40,6 +40,7 @@ body {
   font-weight: 400;
   color: var(--white);
   height: 100vh;
+  background-color: var(--dark-blue);
 }
 
 ul {

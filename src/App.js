@@ -4,9 +4,9 @@ import Navigation from "./components/Header/Navigation";
 import SideNav from "./components/Header/SideNav";
 import Homepage from "./Pages/HomePage/Homepage";
 import Destination from "./Pages/Destination/Destination";
-
 import Crew from "./Pages/Crew/Crew";
 import Technology from "./Pages/Technology/Technology";
+import NotFound from "./Pages/NotFound/NotFound";
 function App() {
   const [sideNavIsOpen, setSideNavIsOpen] = useState(false);
 
@@ -34,13 +34,12 @@ function App() {
         delayClose={delaySideNavClose}
       />
       <Switch>
-        <Route exact path="/home">
-          <Redirect to="/" />
+        <Route exact path="/">
+          <Redirect to="/home" />
         </Route>
-        <Route path="/" exact>
+        <Route path="/home">
           <Homepage />
         </Route>
-
         <Route path="/destination">
           <Destination />
         </Route>
@@ -51,7 +50,7 @@ function App() {
           <Technology />
         </Route>
         <Route path="*">
-          <Redirect to="/" />
+          <NotFound />
         </Route>
       </Switch>
     </>
