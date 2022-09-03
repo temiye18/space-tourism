@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../../components/Utilities/Container";
-import rocketSmall from "../../assets/404/rocket_small.png";
 import rocketVertical from "../../assets/404/rocket_vertical.png";
 import rocketSide from "../../assets/404/rocket_side.png";
-import micLeft from "../../assets/404/mic_left.png";
+
 import classes from "./NotFound.module.css";
 
 const NotFound = () => {
