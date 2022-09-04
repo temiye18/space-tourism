@@ -1,25 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/shared/logo.svg";
 import classes from "./Navigation.module.css";
 import menuBar from "../../assets/shared/icon-hamburger.svg";
 
 const Navigation = ({ openSideNav }) => {
-  const [destinationIsActive, setDestinationIsActive] = useState(false);
+  // const [destinationIsActive, setDestinationIsActive] = useState(false);
   // const [crewIsActive, setCrewIsActive] = useState(false);
   // const [technologyIsActive, setTechnologyIsActive] = useState(false);
 
-  const disableActiveList = () => {
-    setDestinationIsActive(false);
-    // setCrewIsActive(false);
-    // setTechnologyIsActive(false);
-  };
+  // const disableActiveList = () => {
+  //   setDestinationIsActive(false);
+  //   // setCrewIsActive(false);
+  //   // setTechnologyIsActive(false);
+  // };
 
-  const activeDestination = () => {
-    setDestinationIsActive(true);
-    // setCrewIsActive(false);
-    // setTechnologyIsActive(false);
-  };
+  // const activeDestination = () => {
+  //   setDestinationIsActive(true);
+  //   // setCrewIsActive(false);
+  //   // setTechnologyIsActive(false);
+  // };
   // const activeCrew = () => {
   //   setDestinationIsActive(false);
   //   setCrewIsActive(true);
@@ -32,7 +32,7 @@ const Navigation = ({ openSideNav }) => {
   //   setTechnologyIsActive(true);
   // };
 
-  const destinationClass = destinationIsActive ? classes.active__li : "";
+  // const destinationClass = destinationIsActive ? classes.active__li : "";
   // const crewClass = crewIsActive ? classes.active__li : "";
   // const technologyClass = technologyIsActive ? classes.active__li : "";
 
@@ -46,38 +46,22 @@ const Navigation = ({ openSideNav }) => {
         <nav className={classes.nav}>
           <ul>
             <li>
-              <NavLink
-                to="/home"
-                activeClassName={classes.active}
-                onClick={disableActiveList}
-              >
+              <NavLink to="/home" activeClassName={classes.active}>
                 00 HOME
               </NavLink>
             </li>
-            <li className={destinationClass}>
-              <NavLink
-                to="/destination/Moon"
-                activeClassName={classes.active}
-                onClick={activeDestination}
-              >
+            <li>
+              <NavLink to="/destination" activeClassName={classes.active}>
                 01 DESTINATION
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/crew"
-                activeClassName={classes.active}
-                onClick={disableActiveList}
-              >
+              <NavLink to="/crew" activeClassName={classes.active}>
                 02 CREW
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/technology"
-                activeClassName={classes.active}
-                onClick={disableActiveList}
-              >
+              <NavLink to="/technology" activeClassName={classes.active}>
                 03 TECHNOLOGY
               </NavLink>
             </li>

@@ -4,17 +4,17 @@ import hamburger from "../../assets/shared/icon-close.svg";
 import classes from "./SideNav.module.css";
 
 const SideNav = ({ closeSideNav, delayClose, sideNavIsOpen }) => {
-  const [destinationIsActive, setDestinationIsActive] = useState(false);
+  // const [destinationIsActive, setDestinationIsActive] = useState(false);
 
-  const disableActiveList = () => {
-    setDestinationIsActive(false);
-  };
+  // const disableActiveList = () => {
+  //   setDestinationIsActive(false);
+  // };
 
-  const activeDestination = () => {
-    setDestinationIsActive(true);
-  };
+  // const activeDestination = () => {
+  //   setDestinationIsActive(true);
+  // };
 
-  const destinationClass = destinationIsActive ? classes.active__li : "";
+  // const destinationClass = destinationIsActive ? classes.active__li : "";
 
   return (
     <aside className={`${sideNavIsOpen ? classes.showSideNav : ""}`}>
@@ -24,7 +24,7 @@ const SideNav = ({ closeSideNav, delayClose, sideNavIsOpen }) => {
 
       <nav className={classes.nav}>
         <ul>
-          <li onClick={disableActiveList}>
+          <li>
             <NavLink
               to="/home"
               activeClassName={classes.active}
@@ -33,16 +33,16 @@ const SideNav = ({ closeSideNav, delayClose, sideNavIsOpen }) => {
               <span className={classes.link__span}>00</span> HOME
             </NavLink>
           </li>
-          <li onClick={activeDestination} className={destinationClass}>
+          <li>
             <NavLink
-              to="/destination/Moon"
+              to="/destination"
               activeClassName={classes.active}
               onClick={delayClose}
             >
               <span className={classes.link__span}>01</span> DESTINATION
             </NavLink>
           </li>
-          <li onClick={disableActiveList}>
+          <li>
             <NavLink
               to="/crew"
               activeClassName={classes.active}
@@ -51,7 +51,7 @@ const SideNav = ({ closeSideNav, delayClose, sideNavIsOpen }) => {
               <span className={classes.link__span}>02</span> CREW
             </NavLink>
           </li>
-          <li onClick={disableActiveList}>
+          <li>
             <NavLink
               to="/technology"
               activeClassName={classes.active}

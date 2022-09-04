@@ -36,7 +36,8 @@ const Technology = () => {
         </nav>
 
         <Route exact path={path}>
-          <TechnologyLanding />
+          {/* <TechnologyLanding /> */}
+          <Redirect to="/technology/launchvehicle" />
         </Route>
 
         <Route path={`${path}/:alt`}>

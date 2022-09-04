@@ -33,7 +33,8 @@ const Destination = () => {
         </div>
 
         <Route exact path={path}>
-          <DestinationLanding />
+          {/* <DestinationLanding /> */}
+          <Redirect to="/destination/Moon" />
         </Route>
         <Route path={`${path}/:planet`}>
           <DestinationDetails />

@@ -33,12 +33,12 @@ nav.nav > ul {
   display: grid;
   gap: 2rem;
 }
-nav.nav > ul > li {
+/* nav.nav > ul > li {
   box-sizing: border-box;
   border-bottom: 2px solid transparent;
   width: fit-content;
   padding-bottom: 10px;
-}
+} */
 
 nav.nav > ul > li.active__li {
   border-color: white;
@@ -50,7 +50,7 @@ nav.nav > ul > li > a {
   letter-spacing: 2.7px;
   transition: border 0.3s ease-in;
   border-bottom: 2px solid transparent;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 nav.nav > ul > li > a:hover {
