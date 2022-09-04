@@ -67,3 +67,18 @@ img {
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--white);
 }
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  bottom: 20% !important;
+  left: -47% !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 10px !important;
+    left: 0 !important;
+  }
+}

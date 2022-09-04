@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useRouteMatch, Route, Redirect } from "react-router-dom";
 import data from "../../data";
 import Container from "../../components/Utilities/Container";
-import TechnologyLanding from "./TechnologyLanding";
+// import TechnologyLanding from "./TechnologyLanding";
 import TechnologyDetails from "./TechnologyDetails";
 import classes from "./Technology.module.css";
 

@@ -3,7 +3,7 @@ import { NavLink, Route, useRouteMatch, Redirect } from "react-router-dom";
 import data from "../../data";
 import Container from "../../components/Utilities/Container";
 import DestinationDetails from "./DestinationDetails";
-import DestinationLanding from "./DestinationLanding";
+// import DestinationLanding from "./DestinationLanding";
 import classes from "./Destination.module.css";
 const Destination = () => {
   const { path, url } = useRouteMatch();
