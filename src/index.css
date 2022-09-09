@@ -41,6 +41,7 @@ body {
   color: var(--white);
   height: 100vh;
   background-color: var(--dark-blue);
+  overflow-x: hidden;
 }
 
 ul {
