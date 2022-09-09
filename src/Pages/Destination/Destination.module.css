@@ -68,6 +68,18 @@
   align-self: center;
   justify-self: center;
 }
+.detail__image img {
+  animation: planet-spin infinite 20s linear;
+}
+
+@keyframes planet-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .detail__content {
   justify-self: center;
